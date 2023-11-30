@@ -18,8 +18,8 @@
 
 //----------- WIFI ---------------------------
 #include <ESP8266WiFi.h>
-char ssid[] = "WGS_A2_Etaj8";
-char pass[] = "WGS_A2_E8";
+char ssid[] = "";
+char pass[] = "";
 
 //----------- DISPLAY -----------------------
 #include <SPI.h>
@@ -52,8 +52,8 @@ WiFiClient espClient;
 constexpr uint16_t THINGSBOARD_PORT = 1883U;
 constexpr uint32_t MAX_MESSAGE_SIZE = 128U;
 ThingsBoardSized<MAX_MESSAGE_SIZE> tb(espClient, MAX_MESSAGE_SIZE);
-#define THINGSBOARD_SERVER  "141.85.224.139"
-#define TOKEN               "ruODTpp4PivcUDh8u41Y"
+#define THINGSBOARD_SERVER  ""
+#define TOKEN               ""
 
 // -------------- NTP -------------------------
 #include <WiFiUdp.h>
